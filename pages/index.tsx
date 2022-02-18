@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import styled, { css } from "styled-components";
-import USA from "../components/USA";
+import Map from "../components/map";
 import Select from "react-select";
 import { useQuery } from "react-query";
 import { stateSalesService } from "../services/stateSales.service";
@@ -88,7 +88,7 @@ const Home: NextPage = () => {
       <div>
         <Header>
           <Image
-            src="/marche-health-logo.svg"
+            src="/logo.svg"
             width={215}
             height={95}
             alt="Kiwi standing on oval"
@@ -123,7 +123,7 @@ const Home: NextPage = () => {
                 </ErrorMsg>
               )}
             </Controls>
-            <USA highlightedStates={highlightedStates}></USA>
+            <Map highlightedStates={highlightedStates}></Map>
           </Content>
         </Container>
       </div>

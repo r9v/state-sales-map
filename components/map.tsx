@@ -1,8 +1,8 @@
 import React from "react";
 
-export default USA;
+export default Map;
 
-function USA({ highlightedStates = [] }: { highlightedStates: string[] }) {
+function Map({ highlightedStates = [] }: { highlightedStates: string[] }) {
   const regularFill = "#FCDAA9";
   const highlightFill = "#F59200";
   const borderStyles = { stroke: "white", strokeWidth: 2 };
